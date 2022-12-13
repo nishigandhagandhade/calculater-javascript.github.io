@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Origanal Calculater</title>
+    <link rel="stylesheet" href="./styleC.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="wrapper">
+
+            <div class="row">
+
+                <form>
+                    <input type="text" id="inputext" placeholder="0">
+                </form>
+
+                <button class="btn" onclick="calaulater(1)">1</button>
+                <button class="btn" onclick="calaulater(2)">2</button>
+                <button class="btn" onclick="calaulater(3)">3</button>
+                <button class="btn" onclick="calaulater(4)">4</button>
+                <br>
+                <br>
+
+                <button class="btn" onclick="calaulater(5)">5</button>
+                <button class="btn" onclick="calaulater(6)">6</button>
+                <button class="btn" onclick="calaulater(7)">7</button>
+                <button class="btn" onclick="calaulater(8)">8</button>
+                <br>
+                <br>
+
+                <button class="btn" onclick="calaulater(9)">9</button>
+                <button class="btn" onclick="calaulater(0)">0</button>
+                <button class="btn" onclick="calaulater('+')">+</button>
+                <button class="btn" onclick="calaulater('-')">-</button>
+                <br>
+                <br>
+
+                <button class="btn" onclick="calaulater('*')">*</button>
+                <button class="btn" onclick="calaulater('%')">%</button>
+                <button class="btn" onclick="calaulater('/')">/</button>
+                <button class="btn" onclick="calaulater('.')">.</button>
+
+                <button class="click" onclick="clr()">c</button>
+                <button class="click" onclick="equal()">=</button>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        function calaulater(number) {
+
+            result = document.getElementById("inputext");
+
+            result.value += number;
+
+        }
+
+        function equal() {
+
+            result.value = eval(result.value);
+
+
+        }
+
+        function clr() {
+
+            result.value = " ";
+        }
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
